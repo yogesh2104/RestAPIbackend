@@ -18,12 +18,10 @@ DATABASES = {
     }
 }
 ```
-
+# Afert Adding database details in settings.py make Migrations and Migrate
 ```
 python manage.py makemigrations
 ```
-## Then
-
 ```
 python manage.py migrate
 ```
