@@ -18,17 +18,6 @@ def showUserList(request):
     return paginator.get_paginated_response(serializer.data)
 
 
-# paginator = PageNumberPagination()
-#     paginator.page_size = 10
-#     person_objects = Person.objects.all()
-#     result_page = paginator.paginate_queryset(person_objects, request)
-#     serializer = PersonSerializer(result_page, many=True)
-#     return paginator.get_paginated_response(serializer.data)
-
-
-
-
-
 @api_view(['GET'])
 def UserDetails(request,pk):
     userList=UserData.objects.get(id=pk)
