@@ -1,10 +1,10 @@
 # RestAPIbackend
 
-## Step 1
+## Install Requirement.txt file
 ```
 pip install -r requirements.txt
 ```
-## After Installing requirements.txt
+## After Installing
 ## Add database details in settings.py file  
 ```python
 DATABASES = {
@@ -29,7 +29,15 @@ python manage.py migrate
 ```
 python manage.py runserver
 ```
-## Project on local machine on http://127.0.0.1:8000/ this port
+## Project on local machine on http://127.0.0.1:8000/api/users/ this port
+## Api Endpoint
+```
+1. api/user # ListDown All User List by default show 5 user and sort list by name
+2. api/user-detail/<id>/ # Return specific user details
+3. api/create-list/ #Make new user data
+4. api/update-list/<id>   #Update details of a user
+5. api/delete-user/<id>  #Delete a user
+```
 
 ## For Admin Panel Create superuser
 
